@@ -8,6 +8,9 @@ BINARIES =  \
 all: $(patsubst %, bin/%, ${BINARIES})
 
 MAIN_DEPS =  \
+	cards  \
+	prompt  \
+	span  \
 	main
 bin/main: $(patsubst %, obj/%.o, ${MAIN_DEPS})
 
